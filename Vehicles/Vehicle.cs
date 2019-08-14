@@ -14,43 +14,57 @@ namespace MilitaryUnits
             if (canMove)
             {
                 int movementSpeed = 3 * moveModifier;
+               
+                Console.WriteLine($"This vehicle has a movement speed of: {movementSpeed} units ");
                 return movementSpeed;
             }
             else return 0;
 
         }
-        public int Cargo(bool canCarryItems, int capacityModifier)
+        public void Cargo(bool canCarryItems, int capacityModifier)
         {
             if (canCarryItems)
             {
                 int carryCapacity = 10 * capacityModifier;
-                return carryCapacity;
+                Console.WriteLine($"This vehicle can carry: {carryCapacity} units ");
+              
             }
-            else return 0;
+            else {
+                Console.WriteLine($"This vehicle cannot carry any cargo units ");
+            
+            }
         }
         public int People(bool hasDriver, int numberOfSeats)
         {
             if (hasDriver)
             {
                 int peopleCarried = numberOfSeats;
+                Console.WriteLine($"This vehicle carries {peopleCarried} people.");
                 return peopleCarried;
             }
-            else return 0;
+
+            else
+            {
+                Console.WriteLine("This unit is a Drone");
+                return 0;
+            }
 
         }
-        public string Weapons(bool hasWeapons)
+        public void Weapons(bool hasWeapons)
         {
 
 
             if (hasWeapons)
             {
                 string weapons = "can equip weapons";
-                return weapons;
+                Console.WriteLine($"This vehicle {weapons}");
+               
             }
             else
             {
                 string weapons = "can not equip weapons";
-                return weapons;
+                Console.WriteLine($"This vehicle {weapons}");
+              
             }
         }
 

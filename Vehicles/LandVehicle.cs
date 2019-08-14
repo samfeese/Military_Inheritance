@@ -6,23 +6,27 @@ namespace MilitaryUnits
 {
     class LandVehicle : Vehicle
     {
-        public int hasWheels(bool hasWheels, int wheels)
+        
+        public void hasWheels(bool hasWheels, int wheels)
         {
             if (hasWheels && wheels == 4)
             {
-                int wheelCount = 4;
-                return wheelCount;
+                
+                Console.WriteLine("This has 4 wheels and is a truck.");
+
             }
             if (hasWheels && wheels == 2)
             {
-                int wheelCount = 2;
-                return wheelCount;
+
+                
+                Console.WriteLine("This has 2 wheels and is a motorcycle.");
+               
             }
             else
             {
-                hasTracks();
-                return 0;
-            }
+                Console.WriteLine("This Vehicle has Tracks."); 
+               
+            } 
                
         }
         public string hasTracks()

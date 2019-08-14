@@ -8,6 +8,12 @@ namespace MilitaryUnits
         {
 
             Hmmwv hummer = new Hmmwv();
+            Console.WriteLine();
+            Abrams tank = new Abrams();
+            Console.WriteLine();
+            Motocycle bike = new Motocycle();
+            Console.WriteLine(  );
+            C130 plane = new C130();
 
 
         }

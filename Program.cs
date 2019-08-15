@@ -6,16 +6,14 @@ namespace MilitaryUnits
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
 
-            Hmmwv hummer = new Hmmwv();
-            Console.WriteLine();
-            Abrams tank = new Abrams();
-            Console.WriteLine();
-            Motocycle bike = new Motocycle();
-            Console.WriteLine(  );
-            C130 plane = new C130();
+            Menus menus = new Menus();
 
 
         }
+
     }
+    
+
 }

@@ -2,29 +2,27 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MilitaryUnits.Vehicles
+namespace MilitaryUnits
 {
-    class Dingy : SeaVehicle
+    public class Submarine : SeaVehicle
     {
-        public Dingy()
+        public Submarine()
         {
             WhatItCanDo();
         }
-        public override void NuclearPowered()
+        public override void Floats()
         {
-            Console.WriteLine("This vehicle is small and agile, fueled by desiel fuel.");
+            Console.WriteLine("This vehicle travels under the water, although it can float, it is usually under the surface");
         }
         private void WhatItCanDo()
         {
-            Movement(true, 3);
+            Movement(true, 4);
             Cargo(false, 0);
-            People(true, 6);
+            People(true, 50);
             Weapons(true);
             Floats();
             NuclearPowered();
 
         }
-
     }
-
 }

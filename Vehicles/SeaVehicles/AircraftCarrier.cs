@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MilitaryUnits.Vehicles
+namespace MilitaryUnits
 {
-    class AircraftCarrier : SeaVehicle
+    public class AircraftCarrier : SeaVehicle
     {
         public AircraftCarrier()
         {

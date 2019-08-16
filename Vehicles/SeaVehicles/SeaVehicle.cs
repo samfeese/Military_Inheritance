@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MilitaryUnits
 {
-    class SeaVehicle : Vehicle
+    public class SeaVehicle : Vehicle
     {
         public virtual void Floats()
         {
